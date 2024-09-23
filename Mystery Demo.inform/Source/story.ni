@@ -26,7 +26,7 @@ Instead of opening the Wardrobe:
 		
 After reading a command when the command prompt is "Enter a combination. >":
 	if the player's command matches "1224":
-		say "The wardrobe is now unlocked.";
+		say "The wardrobe is now unlocked. There is a rack with a couple of sweaters and empty hangers. A pair of human shoes and a box sit on the floor.";
 		now the Wardrobe is unlocked;
 		now the Wardrobe is open;
 		now the command prompt is ">";
@@ -35,7 +35,7 @@ After reading a command when the command prompt is "Enter a combination. >":
 		now the command prompt is "Try again? (Yes or No) >";
 	reject the player's command.
 
-After reading a command when the command prompt is "Try again? (Yes or No) ? >":
+After reading a command when the command prompt is "Try again? (Yes or No) >":
 	if the player's command matches "yes" or the player's command matches "y":
 		now the command prompt is "Enter a combination. >";
 		reject the player's command;
@@ -46,7 +46,17 @@ After reading a command when the command prompt is "Try again? (Yes or No) ? >":
 	otherwise:
 		now the command prompt is ">";
 		reject the player's command.
-	
+		
+The Rain Boots is an undescribed wearable thing in the Wardrobe in the Bedroom. The Rain Boots can be found. The Rain Boots is not found. The description of the Rain Boots is "Two pairs of small yellow rain boots."
+
+The Box is an undescribed closed openable container in the Wardrobe in the Bedroom. The description is "A small box."
+
+Instead of opening the box:
+	now the box is open;
+	now the Rain Boots is found;
+	now the player carries the Rain Boots;
+	say "Two small pairs of cat rain boots. There they are! I slip my tiny paws into each boot." instead.
+
 
 [[collar]]
 The Collar is a undescribed thing in the Bedroom. The description is "A green collar with my name on it. Milo."
@@ -64,14 +74,14 @@ The book is an undescribed thing on the Desk in the Bedroom. The description is 
 
 
 
-The Boots is an undescribed thing in the Bedroom. The Boots can be found. The Boots is not found. The description of the Boots is "Two pairs of small yellow rainboots. I think it might be in the wardrobe."
+
 
 [[Bathroom]]
 
 The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. Small tubes of colorful paste are scattered all over the sink, or my personal water fountain as I like to call it. A mirror cabinet sits above the faucet, I see many types of small bottles peaking through. Right next to the sink is the toilet; sometimes I use it, too. The shower is covered with soap and goo, the bottles that were once on the shelf above the tub now lie flat on the floor. It wasn't always like this."
 
 Instead of going to the Bathroom:
-	If the Boots are found and the player carries the Boots:
+	If the Rain Boots is found and the player is wearing the Rain Boots:
 		say "You go into the bathroom.";
 		continue the action;
 	Otherwise:
