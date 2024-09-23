@@ -14,6 +14,20 @@ The Bed is an undescribed supporter in the Bedroom. The description is "A big an
 
 The Pillow is an undescribed thing on the Bed in the Bedroom. The description is "A big and fluffy pillow covered with my fur."
 
+The Blanket is an undescribed thing on the Bed in the Bedroom. The description is "A big fuzzy pink blanket. It smells like my Hooman."
+
+The Key is an undescribed thing in the Bedroom. The Key can be found. The key is not found. 
+
+Looking under is an action applying to one thing. Understand "look under [something]" as looking under.
+
+Instead of looking under a bed:
+	if Key is found :
+		say "There's nothing else under here." instead.
+	otherwise:
+		now the Key is found;
+		now the player carries the Key;
+		say "There's a key. You take it." instead.
+
 The Wardrobe is an undescribed container in the Bedroom. The Wardrobe is lockable and locked. The Wardrobe is closed. The description is "A tall, dark, wooden wardrobe. When I was a kitten, I used to climb inside and pee. Since the, my Hooman locked it. Looks like it needs some sort of code."
 
 [[wardrobe]]
@@ -65,9 +79,6 @@ Instead of opening the Box:
 	Otherwise:
 		say "A fly flies out of the box. The box is empty." instead.
 
-
-[[collar]]
-The Collar is a undescribed thing in the Bedroom. The description is "A green collar with my name on it. Milo."
 [[nightstand]]
 The Nightstand is an undescribed supporter in the Bedroom. The description is "A wooden nightstand that sits to the left of the bed. There is a mug."
 
@@ -75,11 +86,14 @@ The Mug is an undescribed thing on the Nightstand in the Bedroom. The descriptio
 
 Instead of taking Mug:
 	say "Too hard to bite, too heavy to push off the table."
-
+	
+[[desk]] 
 The Desk is an undescribed supporter in the Bedroom. The description is "a desk with a book."
 
 The book is an undescribed thing on the Desk in the Bedroom. The description is "an old rotting book."
 
+[[collar]]
+The Collar is a undescribed thing in the Bedroom. The description is "A green collar with my name on it. Milo."
 
 
 [[Kitchen]]
