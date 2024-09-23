@@ -54,11 +54,13 @@ The Rain Boots is an undescribed wearable thing in the Wardrobe in the Bedroom. 
 The Box is an undescribed closed openable container in the Wardrobe in the Bedroom. The description is "A small box."
 
 Instead of opening the Box:
-	now the Box is open;
-	now the Rain Boots is found;
-	now the player carries and wears the Rain Boots;
-	say "Two small pairs of cat rain boots. There they are! I slip my tiny paws into each boot." instead;
-	if the Box is open and the Rain Boots is found:
+	if the Box is closed:
+		now the Box is open;
+		now the Rain Boots is found;
+		now the player carries the Rain Boots;
+		now the player wears the Rain Boots;
+		say "Two small pairs of cat rain boots. There they are! I slip my tiny paws into each boot." instead;
+	if Box is open and the Rain Boots is found:
 		say "A fly flies out of the box. The box is empty." instead;
 	Otherwise:
 		say "A fly flies out of the box. The box is empty." instead.
