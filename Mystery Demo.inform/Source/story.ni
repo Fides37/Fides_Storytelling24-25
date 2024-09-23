@@ -16,6 +16,7 @@ The Pillow is an undescribed thing on the Bed in the Bedroom. The description is
 
 The Wardrobe is an undescribed container in the Bedroom. The Wardrobe is lockable and locked. The Wardrobe is closed. The description is "A tall, dark, wooden wardrobe. When I was a kitten, I used to climb inside and pee. Since the, my Hooman locked it. Looks like it needs some sort of code."
 
+[[wardrobe]]
 Instead of opening the Wardrobe:
 	if the Wardrobe is closed:
 		say "There's a combination lock for 4 numbers on the doors...";
@@ -46,16 +47,21 @@ After reading a command when the command prompt is "Try again? (Yes or No) >":
 	otherwise:
 		now the command prompt is ">";
 		reject the player's command.
-		
+
+[[stuff in wardrobe]]
 The Rain Boots is an undescribed wearable thing in the Wardrobe in the Bedroom. The Rain Boots can be found. The Rain Boots is not found. The description of the Rain Boots is "Two pairs of small yellow rain boots."
 
 The Box is an undescribed closed openable container in the Wardrobe in the Bedroom. The description is "A small box."
 
-Instead of opening the box:
-	now the box is open;
+Instead of opening the Box:
+	now the Box is open;
 	now the Rain Boots is found;
-	now the player carries the Rain Boots;
-	say "Two small pairs of cat rain boots. There they are! I slip my tiny paws into each boot." instead.
+	now the player carries and wears the Rain Boots;
+	say "Two small pairs of cat rain boots. There they are! I slip my tiny paws into each boot." instead;
+	if the Box is open and the Rain Boots is found:
+		say "A fly flies out of the box. The box is empty." instead;
+	Otherwise:
+		say "A fly flies out of the box. The box is empty." instead.
 
 
 [[collar]]
@@ -66,7 +72,7 @@ The Nightstand is an undescribed supporter in the Bedroom. The description is "A
 The Mug is an undescribed thing on the Nightstand in the Bedroom. The description is "A red mug, half full of stale coffee."
 
 Instead of taking Mug:
-	say "Too hard to bite, too heavy to push off table."
+	say "Too hard to bite, too heavy to push off the table."
 
 The Desk is an undescribed supporter in the Bedroom. The description is "a desk with a book."
 
@@ -74,7 +80,8 @@ The book is an undescribed thing on the Desk in the Bedroom. The description is 
 
 
 
-
+[[Kitchen]]
+The Kitchen is a room. The Kitchen is north of the Bedroom. The description of the Kitchen is "My favorite room in this entire apartment.  "
 
 [[Bathroom]]
 
@@ -87,7 +94,7 @@ Instead of going to the Bathroom:
 	Otherwise:
 		say "The floor is too wet and my paws will get wet! I need my boots." instead.
 
-
+test wardrobe with "open wardrobe/1224/open box".
 
 
 
