@@ -1,5 +1,7 @@
 "Mystery Demo" by Fides Wong
 
+Release along with interpreter. 
+
 When play begins, say "My hooman just left the house, finally. It said I was getting too fat and hid my delicious treats from me. Curse you, hooman. Today, I am determined to find them and feast. The last time I saw them was in the cabinet in the kitchen. I should probably start there."
 
 [[bedroom]]
@@ -18,6 +20,13 @@ The book is an undescribed thing on the desk in the Bedroom. The description is 
 
 
 The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. Small tubes of colorful paste are scattered all over the sink, or my personal water fountain as I like to call it. A mirror cabinet sits above the faucet, I see many types of small bottles peaking through. Right next to the sink is the toilet; sometimes I use it, too. The shower is covered with soap and goo, the bottles that were once on the shelf above the tub now lie flat on the floor. It wasn't always like this."
+
+Instead of going to the Bathroom:
+	end the story.
+
+Test finishgame with "west/north/i".
+
+
 
 
 
