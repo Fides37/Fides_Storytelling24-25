@@ -110,7 +110,9 @@ Instead of going to the Bathroom:
 	Otherwise:
 		say "The floor is too wet and my paws will get wet! I need my boots." instead.
 
-test wardrobe with "open wardrobe/1224/open box".
+test wardrobe with "open wardrobe/1224/open box". 
+
+
 
 
 
