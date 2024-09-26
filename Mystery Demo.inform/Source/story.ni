@@ -8,7 +8,7 @@ When play begins:
 	now the player carries the collar;
 
 [[bedroom]]
-The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, and a desk with a rug underneath. The Bathroom is to the west and the Kitchen is to the north." 
+The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, a wardrobe, and a desk with a rug underneath. The bathroom is to the west and the kitchen is to the north." 
 
 The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow."
 
@@ -26,7 +26,7 @@ The Rug is an undescribed thing in the Bedroom. The description is "A white and 
 Instead of looking under the rug:
 	say "Just hair ties and lint."
 
-The Key is an undescribed thing in the Bedroom. The Key can be found. The key is not found. 
+The Key is an undescribed thing in the Bedroom. The Key can be found. The key is not found.
 
 The Wardrobe is an undescribed container in the Bedroom. The Wardrobe is lockable and locked. The Wardrobe is closed. The description is "A tall, dark, wooden wardrobe. When I was a kitten, I used to climb inside and pee. Since the, my Hooman locked it. Looks like it needs some sort of code."
 
@@ -97,11 +97,13 @@ The Collar is a undescribed thing in the Bedroom. The description is "A green co
 
 
 [[Kitchen]]
-The Kitchen is a room. The Kitchen is north of the Bedroom. The description of the Kitchen is "My favorite room in this entire apartment.  "
+The Kitchen is a room. The Kitchen is north of the Bedroom. The description of the Kitchen is "My favorite room in this entire apartment. There is a cabinet, where the treats usually are, a fridge, a sink and a table. The bedroom is to the south."
+
+The Cabinet is an undescribed closed container in the Kitchen. 
 
 [[Bathroom]]
 
-The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. Small tubes of colorful paste are scattered all over the sink, or my personal water fountain as I like to call it. A mirror cabinet sits above the faucet, I see many types of small bottles peaking through. Right next to the sink is the toilet; sometimes I use it, too. The shower is covered with soap and goo, the bottles that were once on the shelf above the tub now lie flat on the floor. It wasn't always like this."
+The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. Small tubes of colorful paste are scattered all over the sink, or my personal water fountain as I like to call it. A mirror cabinet sits above the faucet, I see many types of small bottles peaking through. Right next to the sink is the toilet; sometimes I use it, too. The shower is covered with soap and goo, the bottles that were once on the shelf above the tub now lie flat on the floor. It wasn't always like this. [paragraph break]The bedroom is to the west."
 
 Instead of going to the Bathroom:
 	If the Rain Boots is found and the player is wearing the Rain Boots:
