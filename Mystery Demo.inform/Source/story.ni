@@ -2,31 +2,31 @@
 
 Release along with interpreter. 
 
-When play begins, say "My hooman just left the house, finally. It said I was getting too fat and hid my delicious treats from me. Curse you, hooman. Today, I am determined to find them and feast. The last time I saw them was in the cabinet in the kitchen. I should probably start there."
+When play begins, say "My hooman finally left the house. It hid the treats away because it said I was getting too fat. Curse you, hooman. [paragraph break]Today, I am determined to find them and feast. The last time I saw them was in the cabinet in the kitchen. I should probably start there."
 
 When play begins:
 	now the player carries the collar;
 
 [[bedroom]]
-The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, and a desk with a carpet underneath. The Bathroom is to the west and the Kitchen is to the north." 
+The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, and a desk with a rug underneath. The Bathroom is to the west and the Kitchen is to the north." 
 
 The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow."
+
+Instead of looking under the bed:
+	say "There's something shiny under here. It looks to be a key." 
 
 The Pillow is an undescribed thing on the Bed in the Bedroom. The description is "A big and fluffy pillow covered with my fur."
 
 The Blanket is an undescribed thing on the Bed in the Bedroom. The description is "A big fuzzy pink blanket. It smells like my Hooman."
 
+The Laundry is an undescribed thing in the Bedroom. The description is "A couple shirts and socks are scattered around the floor. My hooman's been so lazy lately." 
+
+The Rug is an undescribed thing in the Bedroom. The description is "A white and gray woven rug with scratch marks and fabric breaking loose."
+
+Instead of looking under the rug:
+	say "Just hair ties and lint."
+
 The Key is an undescribed thing in the Bedroom. The Key can be found. The key is not found. 
-
-Looking under is an action applying to one thing. Understand "look under [something]" as looking under.
-
-Instead of looking under a bed:
-	if Key is found :
-		say "There's nothing else under here." instead.
-	otherwise:
-		now the Key is found;
-		now the player carries the Key;
-		say "There's a key. You take it." instead.
 
 The Wardrobe is an undescribed container in the Bedroom. The Wardrobe is lockable and locked. The Wardrobe is closed. The description is "A tall, dark, wooden wardrobe. When I was a kitten, I used to climb inside and pee. Since the, my Hooman locked it. Looks like it needs some sort of code."
 
