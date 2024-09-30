@@ -198,8 +198,7 @@ Instead of opening the Vent:
 		say "The treats!" instead.
 		
 Instead of eating the treats:
-	say "Sweet, crunchy victory." instead;
-	end the story finally.
+	end the story saying "Sweet, sweet victory."
 
 
 test wardrobe with "open wardrobe/1224/open box". 
