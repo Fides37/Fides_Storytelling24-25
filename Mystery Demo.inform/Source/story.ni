@@ -1,4 +1,4 @@
-"Mystery Demo" by Fides Wong
+"Treat Hunt" by Fides Wong
 
 Release along with interpreter. 
 
