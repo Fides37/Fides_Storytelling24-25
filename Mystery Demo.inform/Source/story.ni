@@ -195,7 +195,7 @@ Instead of opening the Vent:
 		now the vent is open;
 		now the Treats is found;
 		now the player carries the Treats;
-		say "The treats!" instead.
+		say "There's brown paw prints leading to... The treats!" instead.
 		
 Instead of eating the treats:
 	end the story saying "Sweet, sweet victory."
