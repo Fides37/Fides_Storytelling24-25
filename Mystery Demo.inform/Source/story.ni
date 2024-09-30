@@ -12,9 +12,6 @@ The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter t
 
 The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow."
 
-Instead of looking under the bed:
-	say "There's something shiny under here. It looks to be a key." 
-
 The Pillow is an undescribed thing on the Bed in the Bedroom. The description is "A big and fluffy pillow covered with my fur."
 
 The Blanket is an undescribed thing on the Bed in the Bedroom. The description is "A big fuzzy pink blanket. It smells like my Hooman."
@@ -27,6 +24,14 @@ Instead of looking under the rug:
 	say "Just hair ties and lint."
 
 The Key is an undescribed thing in the Bedroom. The Key can be found. The key is not found.
+
+Instead of looking under the Bed:
+	if the Key is found:
+		say "There is nothing else here." instead.
+	otherwise;
+		now the Key is found;
+		now the player carries the Key;
+		say "There's a key undere here. You take it." instead.
 
 The Wardrobe is an undescribed container in the Bedroom. The Wardrobe is lockable and locked. The Wardrobe is closed. The description is "A tall, dark, wooden wardrobe. When I was a kitten, I used to climb inside and pee. Since the, my Hooman locked it. Looks like it needs some sort of code."
 
