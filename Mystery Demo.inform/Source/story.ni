@@ -172,7 +172,7 @@ Instead of opening the Fridge:
 
 [[Bathroom]]
 
-The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. This room smells a little off. There is a bathroom sink with a mirror, a toilet, and a bath. [paragraph break]The bedroom is to the west."
+The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a mess in here. This room smells a little off. There is a bathroom sink with a mirror, a toilet, and a bath. [paragraph break]The bedroom is to the west."
 
 Instead of going to the Bathroom:
 	If the Rain Boots is found and the player is wearing the Rain Boots:
@@ -185,6 +185,8 @@ Instead of going to the Bathroom:
 The Bathroom Sink is an undescribed supporter in the Bathroom. The description is "A white marbled sink. There's only a soap bar and a towel here. A mirror hangs above it."
 
 The Soap Bar is an undescribed thing on the Bathroom Sink in the Bathroom. The description is "Plain white soap. It smells like Hooman's hands."
+
+The Towel is an undescribed thing on the Bathroom Sink in the Bathroom. The description is "a white towel with red stains."
 
 The Mirror is an undescribed thing in the Bathroom. The description is "A reflection of an incredibly handsome cat stares back at me." 
 
