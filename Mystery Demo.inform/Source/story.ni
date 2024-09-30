@@ -13,18 +13,13 @@ The Collar is a undescribed wearable thing. The description is "A green collar w
 [[bedroom]]
 The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, a wardrobe, and a desk. [paragraph break]The bathroom is to the west and the kitchen is to the north." 
 
-The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow."
+The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow. My hooman loves to hide junk under the bed because the room will look 'cleaner'."
 
 The Pillow is an undescribed thing on the Bed in the Bedroom. The description is "A big and fluffy pillow covered with my fur."
 
-The Blankets is an undescribed thing on the Bed in the Bedroom. The description is "A big fuzzy pink blanket. It smells like my Hooman."
+The Blankets is an undescribed thing on the Bed in the Bedroom. The description is "Big fuzzy pink blankets. It smells like my Hooman."
 
 The Laundry is an undescribed thing in the Bedroom. The description is "A couple shirts and socks are scattered around the floor. My hooman's been so lazy lately." 
-
-The Rug is an undescribed thing in the Bedroom. The description is "A white and gray woven rug with scratch marks and fabric breaking loose."
-
-Instead of looking under the rug:
-	say "Just hair ties and lint."
 
 The Key is an undescribed thing in the Bedroom. The Key can be found. The Key is not found. The description of the Key is "A small silver key."
 
@@ -95,6 +90,9 @@ The Mug is an undescribed thing on the Nightstand in the Bedroom. The descriptio
 Instead of taking Mug:
 	say "Too hard to bite, too heavy to push off the table."
 	
+Instead of looking under the Nightstand:
+	say "Just dust bunnies and hair ties."instead.
+	
 [[desk]] 
 The Desk is an undescribed supporter in the Bedroom. The description is "A wooden desk. There's some papers are chaotically spread on the desk. There is a picture frame, a calendar, and a lamp."
 
@@ -113,6 +111,9 @@ The Kitchen is a room. The Kitchen is north of the Bedroom. The description of t
 [[sink]]
 The Sink is an undescribed supporter in the Kitchen. The description is "A metal sink. A dirty cup and plate eagerly wait on the bottom of the sink to be cleaned. A sponge and dish soap sit next to the faucet."
 
+Instead of looking under the sink:
+	say "Nothing's under here." instead.
+
 The Cup is an undescribed thing on the Sink in the Kitchen. The description is "A green tea cup with old mint tea. It's a little chipped on the brim. That was my bad..."
 
 The Plate is an undescribed thing on the Sink in the Kitchen. The description is "A small green plate with tea stains."
@@ -124,26 +125,38 @@ The Dish Soap is an undescribed thing on the Sink in the Kitchen. The descriptio
 [[table]]
 The Table is an undescribed supporter in the Kitchen. The description is "A wooden table with tablecloth. There isn't much on here."
 
+Instead of looking under the Table:
+	say "There's a mouse toy." instead.
+	
+The Mouse Toy is an undescribed thing in the Kitchen. The description is "A beaten up mouse toy."
+
 The Tablecloth is an undescribed thing on the Table in the Kitchen. The description is "White with embroidered details. There's some brown stains here and there."
 
 [[cabinet]]
 The Cabinet is an undescribed container in the Kitchen. The Cabinet is lockable and locked. The Cabinet is closed. The description is "The cabinet hangs on the wall right next to the fridge. I used to be able to climb on the fridge and open the cabinet, but my cursed Hooman locked it. How cruel." 
 
+The Fork is an undescribed thing in the Cabinet in the Kitchen. The Fork can be found. The Fork is not found. The description is "A bent silver fork with years of experience."
 Instead of opening the Cabinet:
 	if the Key is not found:
 		say "Shut tight. No key, no treats." instead;
 	If the Key is found and the player carries the Key:
 		now the Cabinet is open;
+		now the Fork is found;
 		say "The cabinet is opened. No treats. All I see is a fork where the treats should be. There are some paw prints inside, but they're too small to be mine." instead.
 		
-The Fork is an undescribed thing in the Cabinet in the Kitchen. The description is "A bent silver fork with years of experience."
+
+
+The Paw Prints is a thing in the Cabinet in the Kitchen. The description is "Tiny brown paw prints with a weird smell."
 
 [[fridge]]
 The Fridge is an undescribed supporter in the Kitchen. The description is "A giant metal fridge. It takes a gulp and a leap of faith to get on top of that thing. There are some magnets and a note stuck to the fridge." 
 
+Instead of looking under the Fridge:
+	say "Nothing's here." instead.
+
 The Magnets is an undescribed thing on the Fridge in the Kitchen. The description is "I think my Hooman bought these magnets from a shady street vendor because that is NOT Mickey Mouse." 
 
-The Note is an undescribed thing on the Fridge in the Kitchen. The description is "A pink sticky note. It reads 'Get a Christmas themed cake for M." 
+The Note is an undescribed thing on the Fridge in the Kitchen. The description is "A pink sticky note. It reads 'Make Christmas themed cake for M." 
 
 Instead of opening the Fridge:
 	say "Too heavy..." instead.
@@ -183,6 +196,10 @@ Instead of opening the Vent:
 		now the Treats is found;
 		now the player carries the Treats;
 		say "The treats!" instead.
+		
+Instead of eating the treats:
+	say "Sweet, crunchy victory." instead;
+	end the story finally.
 
 
 test wardrobe with "open wardrobe/1224/open box". 
