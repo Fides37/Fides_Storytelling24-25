@@ -5,7 +5,10 @@ Release along with interpreter.
 When play begins, say "My hooman finally left the house. It hid the treats away because it said I was getting too fat. Curse you, hooman. [paragraph break]Today, I am determined to find them and feast. The last time I saw them was in the cabinet in the kitchen. I should probably start there."
 
 When play begins:
-	now the player carries the collar;
+	now the player wears the collar;
+	
+[[collar]]
+The Collar is a undescribed wearable thing. The description is "A green collar with my name on it. Milo."
 
 [[bedroom]]
 The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, a wardrobe, and a desk. [paragraph break]The bathroom is to the west and the kitchen is to the north." 
@@ -103,15 +106,11 @@ The Calendar is an undescribed thing on the Desk in the Bedroom. The description
 
 The Lamp is an undescribed thing on the Desk in the Bedroom. The description is "A long black lamp. It's a little dusty."
 
-The book is an undescribed thing on the Desk in the Bedroom. The description is "An old rotting book."
-
-[[collar]]
-The Collar is a undescribed thing in the Bedroom. The description is "A green collar with my name on it. Milo."
-
 
 [[Kitchen]]
 The Kitchen is a room. The Kitchen is north of the Bedroom. The description of the Kitchen is "I smell treats, but I see no treats. Instead, I see a cabinet, where the treats usually are, a fridge, a sink and a table. [paragraph break]The bedroom is to the south."
 
+[[sink]]
 The Sink is an undescribed supporter in the Kitchen. The description is "A metal sink. A dirty cup and plate eagerly wait on the bottom of the sink to be cleaned. A sponge and dish soap sit next to the faucet."
 
 The Cup is an undescribed thing on the Sink in the Kitchen. The description is "A green tea cup with old mint tea. It's a little chipped on the brim. That was my bad..."
@@ -122,6 +121,11 @@ The Sponge is an undescribed thing on the Sink in the Kitchen. The description i
 
 The Dish Soap is an undescribed thing on the Sink in the Kitchen. The description is "Blue dish soap. I licked it once, it was not a good time."
 
+[[table]]
+The Table is an undescribed supporter in the Kitchen. The description is "A wooden table with tablecloth. There isn't much on here."
+
+The Tablecloth is an undescribed thing on the Table in the Kitchen. The description is "White with embroidered details. There's some brown stains here and there."
+
 [[cabinet]]
 The Cabinet is an undescribed container in the Kitchen. The Cabinet is lockable and locked. The Cabinet is closed. The description is "The cabinet hangs on the wall right next to the fridge. I used to be able to climb on the fridge and open the cabinet, but my cursed Hooman locked it. How cruel." 
 
@@ -130,7 +134,7 @@ Instead of opening the Cabinet:
 		say "Shut tight. No key, no treats." instead;
 	If the Key is found and the player carries the Key:
 		now the Cabinet is open;
-		say "The cabinet is opened. No treats. All I see is a fork where the treats should be." instead.
+		say "The cabinet is opened. No treats. All I see is a fork where the treats should be. There are some paw prints inside, but they're too small to be mine." instead.
 		
 The Fork is an undescribed thing in the Cabinet in the Kitchen. The description is "A bent silver fork with years of experience."
 
@@ -147,7 +151,7 @@ Instead of opening the Fridge:
 
 [[Bathroom]]
 
-The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. I smell something familiar in here. There is a sink with a mirror, a toilet, and a bath. [paragraph break]The bedroom is to the west."
+The Bathroom is a room. The Bathroom is west of the Bedroom. The description of the Bathroom is "ME-ow. It's a cluttered mess. This room smells a little off. There is a bathroom sink with a mirror, a toilet, and a bath. [paragraph break]The bedroom is to the west."
 
 Instead of going to the Bathroom:
 	If the Rain Boots is found and the player is wearing the Rain Boots:
@@ -155,6 +159,31 @@ Instead of going to the Bathroom:
 		continue the action;
 	Otherwise:
 		say "The floor is too wet and my paws will get wet! I need my boots." instead.
+		
+
+The Bathroom Sink is an undescribed supporter in the Bathroom. The description is "A white marbled sink. There's only a soap bar and a towel here. A mirror hangs above it."
+
+The Soap Bar is an undescribed thing on the Bathroom Sink in the Bathroom. The description is "Plain white soap. It smells like Hooman's hands."
+
+The Mirror is an undescribed thing in the Bathroom. The description is "A reflection of an incredibly handsome cat stares back at me." 
+
+The Toilet is an undescribed thing in the Bathroom. The description is "A white toilet."
+
+The Bath is an undescribed thing in the Bathroom. The description is "A wide white basin with a metal faucet and a vent above it. The base of the bath is puddled with water."
+
+The Vent is an undescribed container in the Bathroom. The Vent is lockable and locked. The Vent is closed. The description is "A dusty vent with a weird smell coming from it."
+
+The Treats is an undescribed edible thing in the Vent in the Bathroom. The Treats can be found. The Treats is not found.
+
+Instead of opening the Vent:
+	if the Fork is not found:
+		say "I can't seem to open it with just my paws. I need something to pry it open." instead;
+	If the Fork is found and the player carries the Fork:
+		now the vent is open;
+		now the Treats is found;
+		now the player carries the Treats;
+		say "The treats!" instead.
+
 
 test wardrobe with "open wardrobe/1224/open box". 
 
