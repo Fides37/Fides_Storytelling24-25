@@ -11,7 +11,7 @@ When play begins:
 The Collar is a undescribed wearable thing. The description is "A green collar with my name on it. Milo."
 
 [[bedroom]]
-The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, a wardrobe, and a desk. [paragraph break]The bathroom is to the west and the kitchen is to the north." 
+The Bedroom is a room. The description of the Bedroom is "Dirty laundry litter the hardwood floors. There is a bed, a nightstand, a wardrobe, a desk, and my scratching post. [paragraph break]The bathroom is to the west and the kitchen is to the north." 
 
 The Bed is an undescribed supporter in the Bedroom. The description is "A big and spacious bed with lots and lots of soft blankets. My favorite place to nap is on the big pillow. My hooman loves to hide junk under the bed because the room will look 'cleaner'."
 
@@ -20,6 +20,8 @@ The Pillow is an undescribed thing on the Bed in the Bedroom. The description is
 The Blankets is an undescribed thing on the Bed in the Bedroom. The description is "Big fuzzy pink blankets. It smells like my Hooman."
 
 The Laundry is an undescribed thing in the Bedroom. The description is "A couple shirts and socks are scattered around the floor. My hooman's been so lazy lately." 
+
+The scratching post is an undescribed thing in the Bedroom. The description is "A grey scratching post made out of carpet material. It has a ripped fish toy on a spring on the top."
 
 The Key is an undescribed thing in the Bedroom. The Key can be found. The Key is not found. The description of the Key is "A small silver key."
 
@@ -66,6 +68,10 @@ After reading a command when the command prompt is "Try again? (Yes or No) >":
 		reject the player's command.
 
 [[stuff in wardrobe]]
+The Sweaters is an undescribed thing in the Wardrobe in the Bedroom. The description is "Pink, red, and green wool sweaters."
+
+The Hangers is an undescribed thing in the Wardrobe in the Bedroom. The description is "Metal hangers."
+
 The Rain Boots is an undescribed wearable thing in the Wardrobe in the Bedroom. The Rain Boots can be found. The Rain Boots is not found. The description of the Rain Boots is "Two pairs of small yellow rain boots."
 
 The Box is an undescribed closed openable container in the Wardrobe in the Bedroom. The description is "A small box."
@@ -114,7 +120,7 @@ The Sink is an undescribed supporter in the Kitchen. The description is "A metal
 Instead of looking under the sink:
 	say "Nothing's under here." instead.
 
-The Cup is an undescribed thing on the Sink in the Kitchen. The description is "A green tea cup with old mint tea. It's a little chipped on the brim. That was my bad..."
+The Cup is an undescribed thing on the Sink in the Kitchen. The description is "A green tea cup with old red wine. It's a little chipped on the brim. That was my bad..."
 
 The Plate is an undescribed thing on the Sink in the Kitchen. The description is "A small green plate with tea stains."
 
@@ -123,7 +129,9 @@ The Sponge is an undescribed thing on the Sink in the Kitchen. The description i
 The Dish Soap is an undescribed thing on the Sink in the Kitchen. The description is "Blue dish soap. I licked it once, it was not a good time."
 
 [[table]]
-The Table is an undescribed supporter in the Kitchen. The description is "A wooden table with tablecloth. There isn't much on here."
+The Table is an undescribed supporter in the Kitchen. The description is "A wooden table with tablecloth. A bowl sits on the table."
+
+The Bowl is an undescribed thing on the Table in the Kitchen. The description is "An empty bowl. I already ate my breakfast today."
 
 Instead of looking under the Table:
 	say "There's a mouse toy." instead.
@@ -182,7 +190,9 @@ The Mirror is an undescribed thing in the Bathroom. The description is "A reflec
 
 The Toilet is an undescribed thing in the Bathroom. The description is "A white toilet."
 
-The Bath is an undescribed thing in the Bathroom. The description is "A wide white basin with a metal faucet and a vent above it. The base of the bath is puddled with water."
+The Bath is an undescribed container in the Bathroom. The description is "A wide white basin with a metal faucet and a vent above it. The base of the bath is puddled with soapy water and shampoo bottles."
+
+The Shampoo Bottles is an undescribed thing in the Bath in the Bathroom. The description is "Soapy goo spills out of the bottle onto the bathroom floor."
 
 The Vent is an undescribed container in the Bathroom. The Vent is lockable and locked. The Vent is closed. The description is "A dusty vent with a weird smell coming from it."
 
