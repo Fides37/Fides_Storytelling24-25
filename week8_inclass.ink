@@ -72,7 +72,7 @@ How many pizza's would you like to order?
  *[10]
     ~pizzaAmount = 10
     
-- {pizzaAmount}? You big back. 
+- {pizzaAmount}? You big back. Have 1 extra. ~pizzaAmount + 1
 
 {pizzaAmount <=5: Having a small gathering?}
 {pizzaAmount >5: Throwing a big party, huh?}
