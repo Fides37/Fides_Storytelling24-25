@@ -74,8 +74,10 @@ How many pizza's would you like to order?
     
 - {pizzaAmount}? You big back. Have 1 extra. ~pizzaAmount + 1
 
-{pizzaAmount <=5: Having a small gathering?}
-{pizzaAmount >5: Throwing a big party, huh?}
+You now have {pizzaAmount} pizzas.
+
+{pizzaAmount <=5: ->memory} //check for threshhold
+{pizzaAmount >5: Throwing a big party, huh? -> memory}
 
 -> memory
 == memory == 
