@@ -11,29 +11,35 @@ What should I do first?
 - Let's do that.
 
 == coffee == 
-The Teeny Bean. Everyone says this is the spot to be. I join the long line of impatient college students waiting to order. 
+The Teeny Bean. Everyone at UColl says this is the spot to be. I join the long line of impatient college students waiting to order. 
 Finally, what seems like 10 years go by and it is finally my turn to order. I look up at the menu...
 
-*poop 
-
-->END
+->menu
 
 == menu == 
 
 *[Espresso] Nothing like a good espresso!
 "A small espresso, please."
  
-<em> "Good choice, that will be $4.01." </em>
+"Good choice, that will be $4.01."
 
 *[Latte] "A latte, with extra foam please!"
 "I'm sorry, but we gave the last latte to the last person. Would you like something instead? 
+-> menu
 
 *[Dark Brew] A dark brew, this will definitely wake me up. 
 
-- wowza. 
+- Cup of coffee in hand, I am now ready to tackle anything. 
 
-->END
+-> class
+
+==class ==
+*smth
+
+->End
 
 == classearly == 
+I strolled across the campus courtyard to the Humanities Building. Built in 1820, it still stands strong and full of curious students. I 
 
-    -> END
+== End ==
+-> End
