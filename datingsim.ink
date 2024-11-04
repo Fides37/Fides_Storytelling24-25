@@ -4,42 +4,44 @@ I check my schedule one last time, today must go perfect. "Ethics" at 9am and "I
 
 What should I do first?
 
- * [Get coffee] Can't start a day without a cup of foamy latte. There should be a coffee shop near campus. 
+ * [Get coffee] Can't start a day without a cup yummy coffee. There should be a coffee shop near campus. 
 -> coffee
  * [Go to class early] It won't hurt to go to class a little early. I can play Solitaire on my laptop. 
-
-- Let's do that.
+->classearly
 
 == coffee == 
-The Teeny Bean. Everyone at UColl says this is the spot to be. I join the long line of impatient college students waiting to order. 
+The Teeny Beany. Everyone at UColl says this is the spot to be. I join the long line of impatient college students waiting to order. 
 Finally, what seems like 10 years go by and it is finally my turn to order. I look up at the menu...
 
 ->menu
 
 == menu == 
 
-*[Espresso] Nothing like a good espresso!
-"A small espresso, please."
+*[Espresso] "A small espresso, please."
  
-"Good choice, that will be $4.01."
+"Good choice, that will be $4.32."
 
-*[Latte] "A latte, with extra foam please!"
-"I'm sorry, but we gave the last latte to the last person. Would you like something instead? 
--> menu
+*[Latte] "A small latte, with extra foam please!"
+"Coming right up, that will be $4.01." 
 
-*[Dark Brew] A dark brew, this will definitely wake me up. 
+*[Dark Brew] "A dark brew roast, please."
+"Your total is $4.86."
 
-- Cup of coffee in hand, I am now ready to tackle anything. 
+- Cup of coffee in hand, I am now ready to tackle anything. I deeply inhaled the rich aroma. A comforting, earthy steam enters my senses and melts my brain away. *bzz* A notification from my phone. "Class in 5 minutes." Oh, shoot! 
 
 -> class
 
-==class ==
-*smth
-
-->End
 
 == classearly == 
-I strolled across the campus courtyard to the Humanities Building. Built in 1820, it still stands strong and full of curious students. I 
+I strolled across the campus courtyard to the Humanities Building. Built in 1820, it still stands strong and full of curious students. 
+
+-> class
+
+
+
+== class == 
+
+->End
 
 == End ==
 -> End
