@@ -72,7 +72,8 @@ How many pizza's would you like to order?
  *[10]
     ~pizzaAmount = 10
     
-- {pizzaAmount}? You big back. Have 1 extra. ~pizzaAmount + 1
+- {pizzaAmount}? You big back. Have 1 extra. 
+    ~ pizzaAmount += 1
 
 You now have {pizzaAmount} pizzas.
 
