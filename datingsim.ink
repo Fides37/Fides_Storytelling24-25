@@ -240,17 +240,16 @@ Okay, {myName}. You didn't just spend a shit ton of money on new clothes for not
 ==meetwithJ== 
 Running is hard to do with fancy shoes, but I cannot be late- NOT to this! I leaped out into the hallway and made my way out the door. The courtyard isn't far.
 
-*[RUN!!]
+*[RUN!!] 
 
 - I finally reached the courtyard, despite my struggles. There he is!
-*  "Hey!"
-    "Heya!" He looked me up and down, and then smiled.->courtyard
-* "Boo!" 
+    *  "Hey!"
+    "Heya!" He looked me up and down, and then smiled.
+    * "Boo!" 
     "AaaAAAahhhhh!!!! You scared me!"
-    **"Whoops." 
+   **"Whoops." 
     
-{attraction >= 2: ->compliment} 
-{attraction <2: ->courtyard}
+- {attraction >= 2: ->compliment} {attraction <2: ->courtyard}
 
 ==courtyard==
 "You ready to go to the party?"
@@ -267,11 +266,11 @@ He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, y
 
 *"You look cool, too!"
 
-- "Thank you, princess," he says with a sly smile. Is it just me or did it get 10 degrees hotter? "You ready to go?"
+- "Thank you," he says with a wink. Is it just me or did it get 10 degrees hotter? "You ready to go?"
 *"Yes!"
 -> partywJ
 *"Nahh."
-    "Okay, princess, I'll wait until you're ready."
+    "Okay, I'll wait until you're ready."
     **"I'm ready!"
     
 -> partywJ
