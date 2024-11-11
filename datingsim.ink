@@ -1,6 +1,6 @@
 VAR myName = "name"
 
-
+VAR attraction = 0
 
 Big dreams and starry eyes, you've just transferred to one of the most prestigious universities in the country. You remember all those all-nighters and cups of coffee on your old dorm desk. Now, you're finally here...
 
@@ -32,7 +32,7 @@ Finally, what seems like 10 years go by and it is finally my turn to order. I lo
 
 - Cup of coffee in hand, I am now ready to tackle anything. I deeply inhaled the rich aroma. A comforting, earthy steam enters my senses and melts my brain away. *bzz* A notification from my phone. "Class in 5 minutes." Oh, shoot! 
 
--> class
+-> class_wJ
 
 
 == classearly == 
@@ -41,7 +41,7 @@ I walked up the stairs and pressed against the massive wooden door. It wouldn't 
 
 "Here, I got you," said a voice behind me. A long arm from behind reaches for the door and effortlessly opens it. "After you," he smiles. 
 
-*["Thank you."] "Thank you," I smile back and walked through the door. He follows behind. My face turns a little red. A totally hot guy just saw me utterly fail at opening a mere door- how embarassing! 
+*["Thank you."] "Thank you," I smile back and walked through the door. He follows behind. My face turns a little red. A totally hot guy just saw me utterly fail at opening a mere door- <em>how embarassing!</em>
 
 -> name
 
@@ -58,17 +58,47 @@ I walked up the stairs and pressed against the massive wooden door. It wouldn't 
 - "{myName}? That's a beautiful name," he looks at me with wonder.
 
 "I'm Jeremiah!"
-*["I like that name."] I like that name. 
-*["Nice to meet you."] 
+*["I like that name."] "I like that name." //add attraction point
+    ~ attraction += 1
 
-- Should we go to class?
+*["Nice to meet you."] "Nice to meet you, Jeremiah."
+
+- We walked through the rustic corridors and approached a wide door. Jeremiah pulled the door handle. 
+"After you."
 
 
--> class
+-> class_J
 
-== class == 
-something
+== class_J == 
+//class with J
+I walked through the door and into the classroom. A huge lecture hall- something straight out of Harry Potter. The seats surrounded a stage, similar to an auditorium, with multiple rows climbing up. 
 
+"Over here!" Jeremiah called out. I'm guessing he wants me to sit with him? 
+
+*"Coming!"
+
+- I sat down and began to ruffle through my bag. 
+-> stationary
+
+-> stationary
+
+== stationary == 
+<em> Okay, {myName}. You need to lock IN. </em> I took out my laptop, my notebooks, and my... Should I take out my cute pens or my serious pens? If I take out my cute stuff, he might judge me...
+
+*[Cute pens] If he judges me, whatever. At least I won't have to pretend.
+
+*[Serious pens] He's probably going to see me as a total kid. I can't let him know I'm obsessed with Hello Kitty. Let's
+
+- He stares at my pens. 
+
+-> lecture
+
+== class_wJ == 
+// class w/ J
+Hi
+
+== lecture == 
+djf
 ->End
 
 == End ==
