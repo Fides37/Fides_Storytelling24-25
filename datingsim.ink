@@ -50,8 +50,8 @@ I walked up the stairs and pressed against the massive wooden door. It wouldn't 
     ~myName = "Angel"
 * [Selena]
     ~myName = "Selena"
-* [Endi]
-    ~myName = "Endi"
+* [Alex]
+    ~myName = "Alex"
 
 - "{myName}? That's a beautiful name," he looks at me with wonder.
 
@@ -144,7 +144,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 - {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square! You got another class after this?"}
 
 {n: "Oh, okay... um..What's your next class?"}
-*"I have Chemistry wiiiithh... Doctor Thomas. What about you?" 
+*["Chemistry"] "I have Chemistry wiiiithh... Doctor Thomas. What about you?" 
 
 -> drthomas
 
@@ -237,16 +237,16 @@ He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, y
 
 *"You look cool, too!"
 
-- "Thank you, sweetheart," he says with a sly smile. Is it just me or did it get 10 degrees hotter? "You ready to go?"
+- "Thank you, princess," he says with a sly smile. Is it just me or did it get 10 degrees hotter? "You ready to go?"
 *"Yes!"
 *"Nahh."
-    "Okay, sweetheart, I'll wait until you're ready.
+    "Okay, princess, I'll wait until you're ready."
     **"I'm ready!"
     
 -> partywJ
 
 ==partywJ==
-We walked to the Student Park, a whole park outside the campus dedicated to students. We could hear the party from outside the log cabin. The place was decorated with string lights and the music was blasting. A bunch of people were outside, just mingling and having a good time. Looks like some people snuck some alcohol in this party, too. 
+We walked to the Student Park, a whole park outside the campus dedicated to students with a huge log cabin in the center. We could hear the party from outside the cabin, sounds wild. The place was decorated with string lights, balloons, the music was blasting. A bunch of people were outside, just mingling and having a good time. Looks like some people snuck some alcohol in this party, too. 
 
 * "You wanna get a drink and sit down?"
     "Sure! I'll get some drinks and you find somewhere comfy to sit." ->sit
@@ -257,7 +257,10 @@ We walked to the Student Park, a whole park outside the campus dedicated to stud
 *...
 A couple minutes go by.
     **...
-    A few minutes go by. ->talk
+    A few minutes go by. 
+    ***...
+    
+    ->talk
     
 == talk ==
 <br> "Hey, sorry I took long! I ran into some classmates."
@@ -271,12 +274,13 @@ A couple minutes go by.
 *(stick)["You don't have to stick with me."] "I feel bad, you know you don't have to stick with me all night, right?"
   {attraction >=4: "But I only wanna stay with you."} {attraction <4: You're chill, though! Besides, I'm already here}
 *(gofun)["Go have fun"] "Go have fun! Dance, party, go talk with new people!"
-{attraction >=4: "I only wanna talk to you."} {attraction <4: "Yeah sure, but I'm here with you right now."}
+{attraction >=4: "But I only wanna talk to you."} {attraction <4: "Yeah sure, but I'm here with you right now."}
 
-- "Haha, I laughed."
+- I laughed.
 *"Wow, you're clingy."
     {attraction >=4: "You don't even know," his eyes stared into mine, as if he was hypnotized by me.} {attraction <4: "Sometimes," he shrugged.}
-    *"I like that." 
+    **"I like that." 
+        "Oh, so you do," he teased.
     ~attraction +=1
 
 *"Good to know, I'm good company."
@@ -296,14 +300,63 @@ A couple minutes go by.
 
 ==dance ==
 I took his hand. {attraction >=6: He pulled me close to his body and grabbed my waist. I locked eyes with his emerald green eyes and I could smell his sweet breath.->lovedance} {attraction <6: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
-*[do the robot]
-*[
+*["This is so fun!] "This is the most fun I've had in so long!"
+*["Time of my life!"] "I'm having the fricking time of my life right now!"
+
+- "Me toooo!!" He laughed while doing the robot. ~attraction +=1 
+
+-> chill
+
 
 ==lovedance==
-kfslsk
+He held me close, keeping a firm, but gentle grip on my waist. I could feel every vibration, every breath, every heart beat of this man. We moved to the beat of the song, each gradually more and more intense.
+
+*"You're a good dancer."
+*"You're amazing."
+
+- "I'm alright, but you. You're on fire."
+
+->chill
+
+==chill==
+After a handful of songs, we both sat down on the cushions and took a big gulp of the punch. 
+
+"That was so fun! I didn't know you were such a good dancer." 
+*"There's a lot of things about me you don't know about."
+    "Oh, like what?"
+    ** "I can lick my elbow."
+    ** "I have double jointed knees."
+    "That's sick!" 
+    ~attraction +=1
+
+*"Yeah, you're an awesome dancer!"
+    "Thanks {attraction >=3:, princess.} 
+    
+-> nobeachinv
+
+
+{attraction>=6: -> beachinvite}
+
+
+== beachinvite ==
+"Hey, there's this really cool place I wanna show you," he said averting his eyes from my gaze.
+
+*"You're not gonna murder me, right?"
+    He chuckled, "no, {attraction >=3: princess}. I could never."
+
+*"You wanna take ME?" 
+    "Yeah, I think you're really cool and I wanna show you." 
+    
+- He took me by my hand, wrapping his fingers onto mine. "Let's get out of here, yeah?"
+*"Yeah." I had been bewitched by him. -> beach
+
 
 == noloveparty == 
+fjsjd
+==nobeachinv== 
+fjjksk
 
+== beach == 
 ->End
 
 == End ==
