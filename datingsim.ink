@@ -249,8 +249,8 @@ Running is hard to do with fancy shoes, but I cannot be late- NOT to this! I lea
     "AaaAAAahhhhh!!!! You scared me!"
     **"Whoops." 
     
-{attraction >= 3: ->compliment} 
-{attraction <3: ->courtyard}
+{attraction >= 2: ->compliment} 
+{attraction <2: ->courtyard}
 
 ==courtyard==
 "You ready to go to the party?"
@@ -260,7 +260,7 @@ Running is hard to do with fancy shoes, but I cannot be late- NOT to this! I lea
     He looked at me with a sarcastic smile, "I'll ask you again..." -> courtyard
 
 == compliment== 
-He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, you look... hot."} {outfit.cool: "you look... badass."} His eyes were glued to me. High-five, me. 
+He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, you look... amazing."} {outfit.cool: "you look... badass."} His eyes were glued to me. High-five, me. 
 ~ attraction += 2
 
 *"You don't look half bad yourself."
@@ -269,6 +269,7 @@ He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, y
 
 - "Thank you, princess," he says with a sly smile. Is it just me or did it get 10 degrees hotter? "You ready to go?"
 *"Yes!"
+-> partywJ
 *"Nahh."
     "Okay, princess, I'll wait until you're ready."
     **"I'm ready!"
@@ -306,7 +307,7 @@ A couple minutes go by.
 *(gofun)["Go have fun"] "Go have fun! Dance, party, go talk with new people!"
 {attraction >=4: "But I only wanna talk to you."} {attraction <4: "Yeah sure, but I'm here with you right now."}
 
-- I laughed.
+-{attraction} I laughed.
 *"Wow, you're clingy."
     {attraction >=4: "You don't even know," his eyes stared into mine, as if he was hypnotized by me.} {attraction <4: "Sometimes," he shrugged.}
     **"I like that." 
@@ -356,15 +357,15 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 "That was so fun! I didn't know you were such a good dancer." 
 *"There's a lot of things about me you don't know about."
     "Oh, like what?"
-    ** "I can lick my elbow."
-     ~attraction +=1
-    ** "I have double jointed knees."
-    "Woah, that's sick!" 
-    ~attraction +=1
+    ** (smth)"I can lick my elbow."
+    ** (smth1)"I have double jointed knees."
+ 
 
 *"Yeah, you're an awesome dancer!"
-    "Thanks {attraction >=3:, princess.} 
+    "Thanks {attraction >=3:, princess}!"
     
+- {smth: "Woah, that's sick!"} {smth1:"Woah, that's sick!"} 
+    ~attraction +=1
 -> nobeachinv
 
 
@@ -385,9 +386,20 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 
 
 == noloveparty == 
-fjsjd
+Something!
+
+->End
+
+
 ==nobeachinv== 
-fjjksk
+"You're such a cool person. You're like my best friend already!"
+
+Oh. So that's how he sees me. Just a friend. 
+*Oh well.
+
+- That's not so bad. Maybe it hurts because I actually expected something to come out of it. Moral of the story, don't be delulu. 
+
+-> DONE
 
 == beach == 
 ->End
