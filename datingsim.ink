@@ -136,15 +136,23 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 -> nolovedorm
 
 == party_invite ==
-"There's supposed to be a killer party tonight... for all the first years. Do you... want to come with me?" 
+<p> "There's supposed to be a killer party tonight... for all the first years. Do you... want to come with me?" </p>
 
 * (y) "Yeah, sounds fun."
 
 *(n) "No thanks, not my thing."
 
-- {y: His eyes sparkled, "I'll see you there! You got another class after this?"} 
+- {y: His eyes sparkled, "I'll see you there! You got another class after this?"}
 
-{n: "Oh, okay... Um..What's your next class?"}
+{n: "Oh, okay... um..What's your next class?"}
+*"I have Chemistry wiithh... Doctor Thomas." 
+
+-> drthomas
+
+== drthomas==
+"I have him too, but on Thursday. Wish we had that class together," he said. 
+
+
 
 == nolovedorm ==
 I arrive back at my dorm. I got lucky and got a single, so no pesky roommate for me. Today was a looong day. I kicked my shoes off and jumped onto my surprisingly comfortable bed. I sighed and closed my eyes. Jeremiah. His perfect, dreamy eyes. His gorgeous locks. His luscious lips. God, the things I'd do to... Oh, what am I saying? Snap out of it!
