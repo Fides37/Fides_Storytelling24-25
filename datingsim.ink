@@ -58,10 +58,10 @@ I walked up the stairs and pressed against the massive wooden door. It wouldn't 
 - "{myName}? That's a beautiful name," he looks at me with wonder.
 
 "I'm Jeremiah!"
-*["I like that name."] "I like that name." //add attraction point
+*["I like that name."] "I like that name." He smiled back. //add attraction point
     ~ attraction += 1
 
-*["Nice to meet you."] "Nice to meet you, Jeremiah."
+*["Nice to meet you."] "Nice to meet you, Jeremiah." He smiled back.
 
 - We walked through the rustic corridors and approached a wide door. Jeremiah pulled the door handle. 
 "After you."
@@ -83,11 +83,14 @@ I walked through the door and into the classroom. A huge lecture hall- something
 -> stationary
 
 == stationary == 
+
 <em> Okay, {myName}. You need to lock IN. </em> I took out my laptop, my notebooks, and my... Should I take out my cute pens or my serious pens? If I take out my cute stuff, he might judge me...
 
 *[Cute pens] If he judges me, whatever. At least I won't have to pretend.
+~ attraction += 1
 
 *[Serious pens] He's probably going to see me as a total kid. I can't let him know I'm obsessed with Hello Kitty. Let's
+
 
 - He stares at my pens. 
 
@@ -95,10 +98,13 @@ I walked through the door and into the classroom. A huge lecture hall- something
 
 == class_wJ == 
 // class w/ J
-Hi
+HiSomething
+-> lecture
 
 == lecture == 
-djf
+"Good morning, class. I am Professor Jefferson. Welcome to Ethics 101. I'm sure..."
+
+
 ->End
 
 == End ==
