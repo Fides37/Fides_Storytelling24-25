@@ -18,7 +18,7 @@ I want pizza. Which pizza?
 I'm thirsty, I need a bevy.
 * Sprite
     ...Bubbly
-* Lemonade
+* (Lemonade)
     ...Tarte
 * Iced Tea
     ...Refreshing
@@ -77,7 +77,7 @@ How many pizza's would you like to order?
 
 You now have {pizzaAmount} pizzas.
 
-{pizzaAmount <=5: ->memory} //check for threshhold
+{pizzaAmount <= 5: ->memory} //check for threshhold
 {pizzaAmount >5: Throwing a big party, huh? -> memory}
 
 -> memory
