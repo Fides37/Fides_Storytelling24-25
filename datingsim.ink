@@ -105,7 +105,7 @@ He's probably going to see me as a total kid. I can't let him know I'm obsessed 
 
 *"I insist."
  "Thank you so much, wow." 
-    I pushed the cup onto his desk. He took a sip. "Mmm... I love the taste of {menu.espresso: espresso} {menu.latte: latte} {menu.darkbrew: a dark roast}."
+    I pushed the cup onto his desk. He took a sip. "Mmm... I love the taste of {menu.espresso: espresso} {menu.latte: a latte} {menu.darkbrew: a dark roast}."
     ~attraction +=1
 ->lecture
 *"You probably need it more than me."
@@ -168,14 +168,14 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 
 *(n) "No thanks, not my thing."
 
-- {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square!}
+- {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square!"}
 
-{n: "Oh, okay... um..}
+{n: "Oh, okay... um..."}
 ->nextclass
 
 
 ==nextclass==
-You got another class after this?" He asked.
+"You got another class after this?" He asked.
 *["Chemistry"] "I have Chemistry wiiiithh... Doctor Thomas. What about you?" 
 -> drthomas
 
@@ -240,21 +240,20 @@ Okay, {myName}. You didn't just spend a shit ton of money on new clothes for not
 ==meetwithJ== 
 Running is hard to do with fancy shoes, but I cannot be late- NOT to this! I leaped out into the hallway and made my way out the door. The courtyard isn't far.
 
-*RUN!!
+*[RUN!!]
 
 - I finally reached the courtyard, despite my struggles. There he is!
 *  "Hey!"
-    "Heya!"
+    "Heya!" He looked me up and down, and then smiled.->courtyard
 * "Boo!" 
     "AaaAAAahhhhh!!!! You scared me!"
-    ~attraction +=1
     **"Whoops." 
     
 {attraction >= 3: ->compliment} 
 {attraction <3: ->courtyard}
 
 ==courtyard==
-"You ready to go to the party?
+"You ready to go to the party?"
 
 *"Yes!!!" ->partywJ
 *"Nahh"
@@ -303,7 +302,7 @@ A couple minutes go by.
 
 - He handed me a cup of punch and sat down next to me. We both took a sip. 
 *(stick)["You don't have to stick with me."] "I feel bad, you know you don't have to stick with me all night, right?"
-  {attraction >=4: "But I only wanna stay with you."} {attraction <4: You're chill, though! Besides, I'm already here}
+  {attraction >=4: "But I only wanna stay with you."} {attraction <4: "You're chill, though! Besides, I'm already here."}
 *(gofun)["Go have fun"] "Go have fun! Dance, party, go talk with new people!"
 {attraction >=4: "But I only wanna talk to you."} {attraction <4: "Yeah sure, but I'm here with you right now."}
 
@@ -330,11 +329,12 @@ A couple minutes go by.
     **"Sure, what the hell." ->dance
 
 ==dance ==
-I took his hand. {attraction >=6: He pulled me close to his body and grabbed my waist. I locked eyes with his emerald green eyes and I could smell his sweet breath.->lovedance} {attraction <6: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
+I took his hand. {attraction >=5: He pulled me close to his body and grabbed my waist. I locked eyes with his emerald green eyes and I could smell his sweet breath.->lovedance} {attraction <5: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
 *["This is so fun!] "This is the most fun I've had in so long!"
 *["Time of my life!"] "I'm having the fricking time of my life right now!"
 
-- "Me toooo!!" He laughed while doing the robot. ~attraction +=1 
+- "Me toooo!!" He laughed while doing the robot.
+~attraction +=1 
 
 -> chill
 
@@ -346,18 +346,20 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 *"You're amazing."
 
 - "I'm alright, but you. You're on fire."
+~attraction +=1
 
 ->chill
 
 ==chill==
-After a handful of songs, we both sat down on the cushions and took a big gulp of the punch. 
+{attraction} After a handful of songs, we both sat down on the cushions and took a big gulp of the punch. 
 
 "That was so fun! I didn't know you were such a good dancer." 
 *"There's a lot of things about me you don't know about."
     "Oh, like what?"
     ** "I can lick my elbow."
+     ~attraction +=1
     ** "I have double jointed knees."
-    "That's sick!" 
+    "Woah, that's sick!" 
     ~attraction +=1
 
 *"Yeah, you're an awesome dancer!"
