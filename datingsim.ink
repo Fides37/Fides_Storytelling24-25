@@ -20,19 +20,19 @@ Finally, what seems like 10 years go by and it is finally my turn to order. I lo
 
 == menu == 
 
-*[Espresso] "A small espresso, please."
+*(espresso)[Espresso] "A small espresso, please."
  
 "Good choice, that will be $4.32."
 
-*[Latte] "A small latte, with extra foam please!"
+*(latte)[Latte] "A small latte, with extra foam please!"
 "Coming right up, that will be $4.01." 
 
-*[Dark Brew] "A dark brew roast, please."
+*(darkbrew)[Dark Brew] "A dark brew roast, please."
 "Your total is $4.86."
 
 - Cup of coffee in hand, I am now ready to tackle anything. I deeply inhaled the rich aroma. A comforting, earthy steam enters my senses and melts my brain away. *bzz* A notification from my phone. "Class in 5 minutes." Oh, shoot! 
 
--> class_wJ
+-> class_woJ
 
 == classearly == 
 I strolled across the campus courtyard to the Humanities Building. Built in 1820, it still stands strong and full of curious students. Wide steps of stone stairs led to the grand entrance, so many famous scholars have walked through that door. Now, it is my turn. 
@@ -56,7 +56,8 @@ I walked up the stairs and pressed against the massive wooden door. It wouldn't 
 - "{myName}? That's a beautiful name," he looks at me with wonder.
 
 "I'm Jeremiah!"
-*["I like that name."] "I like that name." He smiled back. //add attraction point
+*["I like that name."] "I like that name." 
+He smiled back.
     ~ attraction += 1
 
 *["Nice to meet you."] "Nice to meet you, Jeremiah." He smiled back.
@@ -84,26 +85,52 @@ I walked through the door and into the classroom. A huge lecture hall- something
 <em> Okay, {myName}. You need to lock IN. </em> I took out my laptop, my notebooks, and my... Should I take out my cute pens or my serious pens? If I take out my cute stuff, he might judge me...
 
 *(cutepens) Definitely cute pens!
-If he judges me, whatever. At least I won't have to pretend.
+If he judges me, whatever. I'm not changing myself just for some guy.
 ~ attraction += 1
 
 *(seriouspens) Play it safe, serious pens.
 He's probably going to see me as a total kid. I can't let him know I'm obsessed with Hello Kitty. 
 
-- I grabbed a couple of pens and placed them on my desk. He stares at them. {cutepens: His eyes widened and his lips curled into a sweet smile} 
+- I grabbed a couple of pens and placed them on my desk. He stares at them. {cutepens: His eyes widened and his lips curled into a sweet smile.} He put his head down and closed his eyes. {coffee: ->offercoffee}
 
 -> lecture
 
-== class_wJ == 
-// class w/ J
+==offercoffee== 
+*["You want some coffee?"]
+"Would you like some coffee?" I coffered my cup to him, "I didn't drink from it, yet."
+*[He must be tired.] He probably stayed up, oh well. Sucks to suck, I guess. 
+->lecture
+
+- "Are you sure? I wouldn't want to take this from you." 
+
+*"I insist."
+ "Thank you so much, wow." 
+    I pushed the cup onto his desk. He took a sip. "Mmm... I love the taste of {menu.espresso: espresso} {menu.latte: latte} {menu.darkbrew: a dark roast}."
+    ~attraction +=1
+->lecture
+*"You probably need it more than me."
+    "Thank you so much, wow." 
+    I pushed the cup onto his desk. He took a sip. "Mmm... I love the taste of {menu.espresso: espresso} {menu.latte: latte} {menu.darkbrew: a dark roast}."
+    ~attraction +=1
+->lecture
 
 
+== class_woJ == 
+I spedwalked to the Humanities Building and ran up the stone steps. I pushed the wooden door, but the door wouldn't budge. What's with this thing?! I'm going to be late! I turned my back onto the door and pushed with all my might. A small creak and then a thud. I marched my way down the corridor and into the classroom. 8:59, perfect. 
 
+I looked around to find a seat, but it was packed. There was only one seat open. I tip toed into the lecture hall and took my seat on the edge. I looked next to me and saw the most gorgeous man I've ever seen in my life. Seriously, he could be a model. 
 
--> lecturewJ
+*"Hi, I'm..."
+** [Angel] "I'm Angel."
+~myName = "Angel"
+** [Selena] "I'm Selena." 
+~myName = "Selena"
+** [Alex] "I'm Alex."
+~myName = "Alex"
 
-==lecturewJ==
-smth
+- "I'm Jeremiah," he smiled back. My heart almost skipped a beat, that was how attractive he was.
+
+->stationary
 
 == lecture ==
 "Good morning, class. I am Professor Jefferson. Welcome to Ethics 101 blah blah blah blah..." Before I knew it, class was already over. I looked over to Jeremiah, he's sleeping. I guess this is my cue to leave.
@@ -132,7 +159,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 - {truth: "Oh yikes, no way I just missed the first lecture." {attraction > 1: ->party_invite}}
 {lie: "You don't have to lie haha." {attraction > 1: ->party_invite}}
 
--> nolovedorm
+-> nextclass
 
 == party_invite ==
 <p> "There's supposed to be a killer party tonight... for all the first years. Do you... want to come with me?" </p>
@@ -141,11 +168,15 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 
 *(n) "No thanks, not my thing."
 
-- {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square! You got another class after this?"}
+- {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square!}
 
-{n: "Oh, okay... um..What's your next class?"}
+{n: "Oh, okay... um..}
+->nextclass
+
+
+==nextclass==
+You got another class after this?" He asked.
 *["Chemistry"] "I have Chemistry wiiiithh... Doctor Thomas. What about you?" 
-
 -> drthomas
 
 == drthomas==
@@ -154,7 +185,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 
 *(fun) "Have fun, Jeremiah!"
 
-- {stclass: "Yeah, I read the description online and it sounds awesome, the professor is rated really high on ratemyprofessor. See you tonight, {myName}!" He waved goodbye and left the class.<br> I should probably head back to my next class too.} 
+- {stclass: "Yeah, I read the description online and it sounds awesome, the professor is rated really high on ratemyprofessor. {party_invite.y:See you tonight, {myName}!"} He waved goodbye and left the class.<br> I should probably head back to my next class too.} 
 {fun: Thanks! See you tonight!" He waved goodbye and left the class. <br> I should probably head back to my next class too.}
 *Let's go to Chemistry.
 ->chemistry
@@ -162,7 +193,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 == chemistry ==
 - I left to go to my next class: Chemistry. I sat down and got my supplies out again. This should go fast. Anndd.... it was. Class is over once again.
 *Back to the dorm I go! 
-
+{attraction <=1: ->nolovedorm}
 {party_invite.n: ->nolovedorm}
 {party_invite.y: ->dorm}
 
