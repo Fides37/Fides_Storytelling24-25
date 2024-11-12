@@ -259,7 +259,7 @@ Running is hard to do with fancy shoes, but I cannot be late- NOT to this! I lea
     He looked at me with a sarcastic smile, "I'll ask you again..." -> courtyard
 
 == compliment== 
-He looked me down, {outfit.cute: "you look... adorable."} {outfit.sexy: "damn, you look... amazing."} {outfit.cool: "you look... badass."} His eyes were glued to me. High-five, me. 
+He looked me down, {outfit.cute: "you look great."} {outfit.sexy: "damn, you look awesome."} {outfit.cool: "you look so cool."} His eyes were glued to me. High-five, me. 
 ~ attraction += 2
 
 *"You don't look half bad yourself."
@@ -382,7 +382,8 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
     "Yeah, I think you're really cool and I wanna show you." 
     
 - He took me by my hand, wrapping his fingers onto mine. "Let's get out of here, yeah?"
-*"Yeah." -> walkbeach
+*"Yeah." 
+-> walkbeach
 
 
 == noloveparty == 
@@ -402,7 +403,7 @@ Oh. So that's how he sees me. Just a friend.
 -> DONE
 
 == walkbeach ==
-The moon had already risen to its peak. We walked for what seemed like an hour, but in reality, it was probably only 15 minutes. We strolled along the sidewalk, using the street lights as a guide. 
+The moon had already risen to its peak. We walked for what seemed like an hour, but in reality, it was probably only 15 minutes. We strolled along the sidewalk, using the street lights as a guide. His arm touching mine.
 
 *"Are we there yet?"
 *"Where are we going?"
@@ -412,9 +413,128 @@ The moon had already risen to its peak. We walked for what seemed like an hour, 
 ->beach 
 
 ==beach==
+The farther we walked, the louder the sound of the clashing waves became. The crisp, and moist breeze glided through my hair. The full moon casted a beautiful blue glow on the road, sand, and water. I looked up at the stars and then at Jeremiah. We kept walking along the shore.
+*"You wanted to bring me to the beach?"
+    "Yeah. This is my happy place. I always came here when I was a kid, especially on nights with a full moon," he said, eyes starry. 
+        ** "You like the moon?" 
+       "Who doesn't? It's beautiful."
+            ***(beauty)["You're beautiful."] I took a deep breath, "you're beautiful." 
+            ~attraction +=1
+            -> beautiful
+        ** "Why the beach?"
+        "Probably 'cause of my dad. He used to take me here all the time."
+            ***(nodad)"Used to?" 
+            ->nodadtalk
+
+==beautiful==
+He turned his head to look at me, with surprised eyes. "Oh wow, thanks," he stuttered, "no one has ever said anything like that to me before."
+*"Never gotten a compliment before?"
+    "Not from someone like you. I bet you hear that kind of stuff all the time. I mean... look at you. You're gorgeous." He blushed. 
+            **"No way. Thank you." 
+            ->beachtalk
+
+*"That's hard to imagine."
+    "Really? What do you mean?"
+        **"You could be a model."
+            He hides his face with his palms, "stop teasing me."
+            *** "Model! Model! Model!"
+                He lifts his hands to reveal his face. Bright red with the face of a kid who just confessed to their first crush. 
+                **** "Sorry, haha." 
+                -> beachtalk
+
+== nodadtalk ==
+"Y'know, I don't actually know that much about you. Sure, we met today, but you seem like such a cool person and I wanna get to know YOU more..."
+
+->beachtalk
 
 
-->End
+==beachtalk==
+{beach.beauty: "I know I just met you, but I wanna get to know you better...like what's your major?"}{beach.nodad: "What's your major?"}
+*"Pre-Med."
+
+- "Damn, pre-med. Why that?" 
+
+Why did I decide to go into medicine in the first place?
+
+*"Because I want to help people."
+~attraction += 1
+*(money)"'Cause it gives me money."
+
+-"Damn, that's {money: still} respectable." 
+
+You can't just let him do all the talking.
+
+*"What about you- what's your major?" 
+    "Film!"
+    **"You like film?"
+        "Love it, can't live without it."
+        ***"[Why?"]A die hard film-lover. Why, though?" 
+        -> film
+        
+==film==
+"God, where do I begin? Okay, okay. When I was a kid, my dad wasn't really... around...SO he would take me these cool places to kinda make up for it. I know, dad shit. Anyway, one of the places he took me was the movies. Not just any kind of movie theater, though. It played movies from decades ago. There's this film called "Run" by this Japanese filmmaker- my FAVORITE, by the way- Akira Kurosawa. I could geek about this dude for years!" He paused, "am I... weirding you out?"
+
+*"Never shut up."
+~attraction +=1 
+*"No! Keep going!"
+~attraction +=1
+
+- "Okay! He does this awesome technique called... blah blah blah blah blah... and that's why, his 40th sequel of "Gone with the Wind" is the best in my opinion." I stared at him, my eyes listening to each word that leaves his soft lips. "I've never had a yappathon like that with anyone. Thank you," he smiled, "I really mean it." 
+
+"Sorry, I didn't mean to talk that much. Do you like watching movies?"
+*"Who doesn't love a good movie?"
+
+*"Duh!"
+
+- "You got a favorite?"
+
+Hmm....  
+
+*"The Notebook."
+    "Oohh, you like romance?" His voice turns playful.
+        **"Yeah? So what?" He pokes fun at me.
+        {attraction >=8: ->kiss}
+
+*"Scream."
+    "I love that one, too! The twist at the end is crazy!"
+        **"Who would've thought it was the boyfriends?"
+
+*"Any Adam Sandler movie."
+    "Felt. Love me a good Adam Sandler movie and some comfy jammies."
+        **"You get it!"
+
+- "You're like my missing half I've been trying to find all my life," he pauses for a moment. He turns his head to the side, "do you... want to go on a... date with me?" 
+
+A date?!
+
+*"That sound's nice." -> date
+
+*"Let's stay friends." -> friends
+
+== date ==
+"Okay, cool. Super cool." 
+
+It was silent. I was trying to take all of what just happened in. We walked, hand in hand, back to the campus... 
+
+->DONE
+
+==friends ==
+"Oh... Okay. I see." 
+
+It was silent. I was trying to take all of what just happened in. I don't think I'm ready for a relationship. After all, I just got accepted into UColl. No more fooling around. Except, I guess I could keep at least one friend....
+
+-> DONE
+
+==kiss==
+"No, nothing. That's just so unexpected. When we first met, I thought you looked so serious!" He laughed.
+
+*"I AM serious!"
+    "Right, right- and this is a serious discussion. So, are you team Edward or Jacob?"
+    **"Ha-ha, very funny...Edward."
+        
+    **Ha-ha, very funny... Jacob."
+
+*"No, I do NOT!"
 
 == End ==
 -> End
