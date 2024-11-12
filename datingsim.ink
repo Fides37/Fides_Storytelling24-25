@@ -531,10 +531,30 @@ It was silent. I was trying to take all of what just happened in. I don't think 
 *"I AM serious!"
     "Right, right- and this is a serious discussion. So, are you team Edward or Jacob?"
     **"Ha-ha, very funny...Edward."
-        
+        "You're into bad boys, huh? Noted." 
+            ***"NOT noted!"
     **Ha-ha, very funny... Jacob."
+        "You're the type to pick the "nice guys, huh? Noted."
+            ***"NOT noted!"
 
 *"No, I do NOT!"
+
+- "Tell me, what's your favorite scene from "Pride and Prejudice? The 2005 version."
+
+It's definitely gotta be... wait. 
+
+*"Why do know so much about romance movies??" 
+
+- "Knew this was gonna come. This is gonna be embarassing, but... I used to watch romance movies to learn how to pick up girls." 
+
+... 
+
+*["What?! LOL"] "Hahaahaha! What?! Hahahaahaha, please stop. My stomach hurts!" 
+
+- "Don't laugh! It's not that funny!!" 
+
+
+
 
 == End ==
 -> End
