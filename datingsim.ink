@@ -357,16 +357,17 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 *"There's a lot of things about me you don't know about."
     "Oh, like what?"
     ** (smth)"I can lick my elbow."
-    ** (smth1)"I have double jointed knees."
+    ~attraction +=1
+    ** (smth1)"I'm gatekeeping."
  
 
 *"Yeah, you're an awesome dancer!"
     "Thanks {attraction >=3:, princess}!"
     
-- {smth: "Woah, that's sick!"} {smth1:"Woah, that's sick!"} 
-    ~attraction +=1
--> nobeachinv
+- {smth: "Woah, that's sick!"} {smth1:"Fine, I'm gatekeeping, too," he crossed his arms jokingly.} 
+    
 
+{attraction <6:-> nobeachinv}
 
 {attraction>=6: -> beachinvite}
 
@@ -381,7 +382,7 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
     "Yeah, I think you're really cool and I wanna show you." 
     
 - He took me by my hand, wrapping his fingers onto mine. "Let's get out of here, yeah?"
-*"Yeah." I had been bewitched by him. -> beach
+*"Yeah." -> walkbeach
 
 
 == noloveparty == 
@@ -400,7 +401,19 @@ Oh. So that's how he sees me. Just a friend.
 
 -> DONE
 
-== beach == 
+== walkbeach ==
+The moon had already risen to its peak. We walked for what seemed like an hour, but in reality, it was probably only 15 minutes. We strolled along the sidewalk, using the street lights as a guide. 
+
+*"Are we there yet?"
+*"Where are we going?"
+
+- A soft chuckle came out, "patience! We're almost there..."
+
+->beach 
+
+==beach==
+
+
 ->End
 
 == End ==
