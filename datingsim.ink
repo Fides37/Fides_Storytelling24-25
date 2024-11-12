@@ -551,9 +551,25 @@ It's definitely gotta be... wait.
 
 *["What?! LOL"] "Hahaahaha! What?! Hahahaahaha, please stop. My stomach hurts!" 
 
-- "Don't laugh! It's not that funny!!" 
+- "Don't laugh! It's not that funny!! I watched those movies so I would be prepared for my first kiss. Not that I used any of that, yet."
+
+Hysterical, I wiped a tear from my eye.
+
+*"Well, are you ready?" 
+
+- He looked at me. 
+
+"Wait, are you serious? Like, I could actually... kiss you?"
+
+* "Yeah. If you want me to be your first kiss?"
+    "Are you sure? You want to kiss me? You're not joking?"
+        "Yes, yes, and YES!"
+
+- We stopped and paused for a moment. We look into each other's eyes with longing, yearning, and desire. The water crashes onto our legs, sinking our feet deeper into the soft sand. He held my waist with one hand and gently wrapped his fingers around my face with his other hand. I closed my eyes and felt his soft lips touch mine. 
+A kiss under blue moonlight, an unforgettable night.
 
 
+-> DONE
 
 
 == End ==
