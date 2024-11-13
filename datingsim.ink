@@ -191,14 +191,23 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 ->chemistry
 
 == chemistry ==
-- I left to go to my next class: Chemistry. I sat down and got my supplies out again. This should go fast. Anndd.... it was. Class is over once again.
+- I left to go to my next class. I sat down and got my supplies out again. This should go fast. Anndd.... it was. Class was over before I knew it.
 *Back to the dorm I go! 
 {attraction <=1: ->nolovedorm}
 {party_invite.n: ->nolovedorm}
 {party_invite.y: ->dorm}
 
 == nolovedorm ==
-I arrive back at my dorm. I got lucky and got a single, so no pesky roommate for me. Today was a looong day. I kicked my shoes off and jumped onto my surprisingly comfortable bed. I sighed and closed my eyes. Jeremiah. His perfect, dreamy eyes. His gorgeous locks. His luscious lips. God, the things I'd do to... Oh, what am I saying? Snap out of it!
+I arrive back at my dorm. I got lucky and got a single, so no pesky roommate for me. Today was a looong day. I kicked my shoes off and jumped onto my surprisingly comfortable bed. I sighed and closed my eyes. Jeremiah. I talked to him for split second, so why am I thinking about him? 
+
+*Maybe it's his dreamy eyes.
+ 
+ - Could be.
+ 
+His eyes were a heavenly shade of green, like the color of jade. 
+    
+*Or his adorable smile.
+
 
 <em> bzz bzz </em> ... I checked my phone. "UColl Updates: Come to the Orientation Party! Snacks, music, and games provided! See you all at 8pm!"
 ->partynotif
@@ -329,7 +338,7 @@ A couple minutes go by.
     **"Sure, what the hell." ->dance
 
 ==dance ==
-I took his hand. {attraction >=5: He pulled me close to his body and grabbed my waist. I locked eyes with his emerald green eyes and I could smell his sweet breath.->lovedance} {attraction <5: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
+I took his hand. {attraction >=5: He pulled me close to his body and grabbed my waist. I locked eyes with his hypnotic green eyes and I could smell his sweet breath.->lovedance} {attraction <5: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
 *["This is so fun!] "This is the most fun I've had in so long!"
 *["Time of my life!"] "I'm having the fricking time of my life right now!"
 
@@ -503,7 +512,7 @@ Hmm....
     "Felt. Love me a good Adam Sandler movie and some comfy jammies."
         **"You get it!"
 
-- "You're like my missing half I've been trying to find all my life," he pauses for a moment. He turns his head to the side, "do you... want to go on a... date with me?" 
+- "You're like my missing half I've been trying to find all my life," he pauses for a moment. He turns his head to the side, "do you... want to go watch a movie with... me? Like a date?" 
 
 A date?!
 
