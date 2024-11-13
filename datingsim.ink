@@ -323,7 +323,7 @@ A couple minutes go by.
     ~attraction +=1
 
 *"Good to know, I'm good company."
-    {attraction >=4: "You're amazing company. I never wanna leave it."} {attraction <4: You're a rockstar, duh."}
+    {attraction >=4: "You're amazing company. I never wanna leave it."} {attraction <4: "You're a rockstar, duh."}
     
 - Damn, I'm starting to get butterflies. 
 
@@ -387,7 +387,7 @@ After a handful of songs, we both sat down on the cushions and took a big gulp o
 *"You wanna take ME?" 
     "Yeah, I think you're really cool and I wanna show you." 
     
-- He took me by my hand, wrapping his fingers onto mine. "Let's get out of here, yeah?"
+- He took me by my hand, wrapping his fingers around mine. "Let's get out of here, yeah?"
 *"Yeah." 
 -> walkbeach
 
@@ -487,7 +487,7 @@ He turned his head to look at me, with surprised eyes. "Oh wow, thanks," he stut
 {beach.beauty: "I know I just met you, but I wanna get to know you better...like what's your major?"}{beach.nodad: "What's your major?"}
 *"Pre-Med."
 
-- "Damn, pre-med. Why that?" 
+- "Damn, pre-med. Why's that?" 
 
 Why did I decide to go into medicine in the first place?
 
@@ -514,7 +514,8 @@ You can't just let him do all the talking.
 *"No! Keep going!"
 ~attraction +=1
 
-- "Okay! He does this awesome technique called... blah blah blah blah blah... and that's why, his 40th sequel of "Gone with the Wind" is the best in my opinion." I stared at him, my eyes listening to each word that leaves his soft lips. "I've never had a yappathon like that with anyone. Thank you," he smiled, "I really mean it." 
+- "Okay! He does this awesome technique called... blah blah blah blah blah... and that's why, his 40th sequel of "Gone with the Wind" is the best in my opinion." I stared at him, my eyes listening to each word that leaves his soft lips. "I've never had a yappathon like that with anyone. Thank you," he smiled, "I really mean it."
+- A subtle warm glow of red radiates from my face. 
 
 "Sorry, I didn't mean to talk that much. Do you like watching movies?"
 *"Who doesn't love a good movie?"
@@ -527,7 +528,7 @@ Hmm....
 
 *"The Notebook."
     "Oohh, you like romance?" His voice turns playful.
-        **"Yeah? So what?" He pokes fun at me.
+        **"Yeah? So what?"
         {attraction >=8: ->kiss}
 
 *"Scream."
@@ -542,9 +543,11 @@ Hmm....
 
 A date?!
 
-*"That sound's nice." -> date
+*"That sound's nice." 
+-> date
 
-*"Let's stay friends." -> friends
+*"Let's stay friends." 
+-> friends
 
 == date ==
 "Okay, cool. Super cool." 
@@ -558,10 +561,12 @@ It was silent. I was trying to take all of what just happened in. We walked, han
 
 It was silent. I was trying to take all of what just happened in. I don't think I'm ready for a relationship. After all, I just got accepted into UColl. No more fooling around. Except, I guess I could keep at least one friend....
 
+We walked side by side back to the campus.
+
 -> DONE
 
 ==kiss==
-"No, nothing. That's just so unexpected. When we first met, I thought you looked so serious!" He laughed.
+"No, nothing. That's just so unexpected. When we first met, I thought you looked so serious!" he laughed.
 
 *"I AM serious!"
     "Right, right- and this is a serious discussion. So, are you team Edward or Jacob?"
@@ -569,22 +574,22 @@ It was silent. I was trying to take all of what just happened in. I don't think 
         "You're into bad boys, huh? Noted." 
             ***"NOT noted!"
     **Ha-ha, very funny... Jacob."
-        "You're the type to pick the "nice guys, huh? Noted."
+        "You're the type to pick the 'nice guys', huh? Noted."
             ***"NOT noted!"
 
 *"No, I do NOT!"
 
-- "Tell me, what's your favorite scene from "Pride and Prejudice? The 2005 version."
+- "Tell me, what's your favorite scene from 'Pride and Prejudice'? The 2005 version."
 
 It's definitely gotta be... wait. 
 
 *"Why do know so much about romance movies??" 
 
-- "Knew this was gonna come. This is gonna be embarassing, but... I used to watch romance movies to learn how to pick up girls." 
+- "Oh boy, I knew this was gonna come. This is gonna be embarassing, and DON'T LAUGH... I used to watch romance movies to learn how to pick up girls." 
 
 ... 
 
-*["What?! LOL"] "Hahaahaha! What?! Hahahaahaha, please stop. My stomach hurts!" 
+*["LOL"] "Hahaahaha! What?! Hahahaahaha, please stop. My stomach hurts!" 
 
 - "Don't laugh! It's not that funny!! I watched those movies so I would be prepared for my first kiss. Not that I used any of that, yet."
 
@@ -597,10 +602,10 @@ Hysterical, I wiped a tear from my eye.
 "Wait, are you serious? Like, I could actually... kiss you?"
 
 * "Yeah. If you want me to be your first kiss?"
-    "Are you sure? You want to kiss me? You're not joking?"
-        "Yes, yes, and YES!"
+    "Are you sure? You're not joking? You want to kiss me?"
+        ** ["Yes!"] "Yes, yes, and YES!"
 
-- We stopped and paused for a moment. We look into each other's eyes with longing, yearning, and desire. The water crashes onto our legs, sinking our feet deeper into the soft sand. He held my waist with one hand and gently wrapped his fingers around my face with his other hand. I closed my eyes and felt his soft lips touch mine. 
+- We stopped and paused for a moment. We look into each other's eyes with longing, yearning, and desire. The water crashes onto our legs, sinking our feet deeper into the soft sand. He held my waist with one hand and gently wrapped his fingers around my face with his other. I closed my eyes and felt his soft lips touch mine. 
 A kiss under blue moonlight, an unforgettable night.
 
 
