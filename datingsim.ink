@@ -143,7 +143,8 @@ I looked around to find a seat, but it was packed. There was only one seat open.
 {wake: ->wake_class} 
 
 ==leave_class== 
-I packed all my supplies back into my bag and got up from my seat. I glance at Jeremiah one last time before I leave.{attraction >1: Suddenly, I felt a tug on my sweater. ->party_invite}
+I packed all my supplies back into my bag and got up from my seat. I glance at Jeremiah one last time before I leave.
+{attraction >1: Suddenly, I felt a tug on my sweater. ->party_invite}
 
 * Can't be late for my next class.
 
@@ -162,7 +163,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 -> nextclass
 
 == party_invite ==
-<p> "There's supposed to be a killer party tonight... for all the first years. Do you... want to come with me?" </p>
+"There's supposed to be a killer party tonight... for all the first years. Do you... want to come with me?" </p>
 
 * (y) "Yeah, sounds fun."
 
@@ -170,8 +171,7 @@ I gently placed my hand on his shoulder and gave him a little shake. His body fl
 
 - {y: His eyes sparkled, "I'll see you there! Meet me by the courtyard at 7:30pm, be there or be square!"}
 
-{n: "Oh, okay... um..."}
-->nextclass
+{n: "Oh, okay... um..."} ->nextclass
 
 
 ==nextclass==
@@ -315,7 +315,7 @@ A couple minutes go by.
 *(gofun)["Go have fun"] "Go have fun! Dance, party, go talk with new people!"
 {attraction >=4: "But I only wanna talk to you."} {attraction <4: "Yeah sure, but I'm here with you right now."}
 
--{attraction} I laughed.
+-I laughed.
 *"Wow, you're clingy."
     {attraction >=4: "You don't even know," his eyes stared into mine, as if he was hypnotized by me.} {attraction <4: "Sometimes," he shrugged.}
     **"I like that." 
@@ -331,7 +331,7 @@ A couple minutes go by.
 
 == talk2 == 
 "Do you like to dance?" He got up and extended his hand.
-*"I've been waiting for this!" ->dance
+*"Hells yeah!" ->dance
      
 *"No, I could never."
     "Well, it's now or never." He still had his hand extended for me. 
@@ -339,7 +339,7 @@ A couple minutes go by.
 
 ==dance ==
 I took his hand. {attraction >=5: He pulled me close to his body and grabbed my waist. I locked eyes with his hypnotic green eyes and I could smell his sweet breath.->lovedance} {attraction <5: He grabbed my hand and spun me around. He was surprisingly a good dancer, his feet and arms moved with the rhythm.}
-*["This is so fun!] "This is the most fun I've had in so long!"
+*["This is so fun!"] "This is the most fun I've had in so long!"
 *["Time of my life!"] "I'm having the fricking time of my life right now!"
 
 - "Me toooo!!" He laughed while doing the robot.
@@ -360,7 +360,7 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 ->chill
 
 ==chill==
-{attraction} After a handful of songs, we both sat down on the cushions and took a big gulp of the punch. 
+After a handful of songs, we both sat down on the cushions and took a big gulp of the punch. 
 
 "That was so fun! I didn't know you were such a good dancer." 
 *"There's a lot of things about me you don't know about."
@@ -373,10 +373,7 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 *"Yeah, you're an awesome dancer!"
     "Thanks!"
     
-- {smth: "Woah, that's sick!"} {smth1:"Fine, I'm gatekeeping, too," he crossed his arms jokingly.} 
-    
-
-{attraction <6:-> nobeachinv}
+- {smth: "Woah, that's sick!"} {smth1:"Fine, I'm gatekeeping, too," he crossed his arms jokingly.} {attraction <6:-> nobeachinv}
 
 {attraction>=6: -> beachinvite}
 
@@ -433,7 +430,7 @@ I came to see you...
 ==nobeachinv== 
 "You're such a cool person. You're like my best friend already!"
 
-Oh. So that's how he sees me. Just a friend. 
+Oh. Just a friend. 
 *Oh well.
 
 - That's not so bad. Maybe it hurts because I actually expected something to come out of it. Moral of the story, don't be delulu. 
