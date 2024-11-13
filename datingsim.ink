@@ -285,7 +285,7 @@ He looked me down, {outfit.cute: "you look great."} {outfit.sexy: "damn, you loo
 -> partywJ
 
 ==partywJ==
-We walked to the Student Park, a whole park outside the campus dedicated to students with a huge log cabin in the center. We could hear the party from outside the cabin, sounds wild. The place was decorated with string lights, balloons, the music was blasting. A bunch of people were outside, just mingling and having a good time. Looks like some people snuck some alcohol in this party, too. 
+We walked to the Student Park, a whole park outside the campus dedicated to students with a huge log cabin in the center. We could hear the party from outside the cabin, it sounds wild. The place was decorated with string lights, balloons, the music was blasting. A bunch of people were outside, just mingling and having a good time. Looks like some people snuck some alcohol in this party, too. 
 
 * "You wanna get a drink and sit down?"
     "Sure! I'll get some drinks and you find somewhere comfy to sit." ->sit
@@ -371,7 +371,7 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
  
 
 *"Yeah, you're an awesome dancer!"
-    "Thanks {attraction >=3:, princess}!"
+    "Thanks!"
     
 - {smth: "Woah, that's sick!"} {smth1:"Fine, I'm gatekeeping, too," he crossed his arms jokingly.} 
     
@@ -396,9 +396,38 @@ He held me close, keeping a firm, but gentle grip on my waist. I could feel ever
 
 
 == noloveparty == 
-Something!
+I walked to the Student Park, a whole park outside the campus dedicated to students with a huge log cabin in the center. You could the party from outside the cabin, it sounds wild. The place was decorated with string lights, balloons, the music was blasting. A bunch of people were outside, just mingling and having a good time. Looks like some people snuck some alcohol in this party, too.
 
-->End
+-> nlpartychoices
+
+==nlpartychoices==
+*(drink)[Let's get a drink.]
+    I poured myself a cup of punch from the punch bowl. I hope no one spat in it. 
+        ->nlpartychoices
+    
+*(dancefloor)[Hit the dance floor!]
+    I didn't come with anyone, but who says I need friends to dance! It's totally not lame dancing by myself at a party!
+        ->nlpartychoices
+
+*(loser)[Sit in the corner and be a loser.]
+    Looks like I'm gonna have to be that one loser who sits in the corner at a party. 
+        ->sittingalone
+    
+
+==sittingalone==
+
+I sat alone on a bench near the poor. People around me were having so much fun dancing, drinking, and  talking, while I was sitting here alone. I wish Jeremiah was here, at least then I would know someone here.
+
+"This seat taken?" Said a familar deep voice. I looked up.
+
+*["Jeremiah!"] "Jeremiah, right? No, go ahead."
+
+- "I didn't know you were coming to this party," he said enthusiastically. 
+
+I came to see you...
+
+*["Just came to check it out."] "Yeah, I just came to check the vibe out."
+   ->talk2
 
 
 ==nobeachinv== 
