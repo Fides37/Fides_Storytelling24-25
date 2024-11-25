@@ -115,16 +115,16 @@ h2 {
 
 p {
     font-size: 13pt;
-    color: #888;
+    color: indianred;
     line-height: 1.7em;
     font-weight: lighter;
 }
 
 a {
     font-weight: 700;
-    color: #b97c2c;
+    color: #FFFFFF;
     font-family: sans-serif;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .unclickable {
@@ -272,7 +272,7 @@ body.dark {
 }
 
 .dark a {
-    color: #cc8f1a;
+    color: #FFF;
 }
 .dark .unclickable{
     color: #c4af87;
@@ -303,4 +303,16 @@ body.dark {
 
 .dark #controls {
     background: black;
+}
+
+
+.innerThought{
+    font-size: 60px;
+    color: indianred;
+}
+
+.position{
+position: fixed;
+top:0px;
+left: 5px;
 }

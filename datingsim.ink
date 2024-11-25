@@ -2,19 +2,26 @@ VAR myName = "name"
 
 VAR attraction = 0
 
-Big dreams and starry eyes, you've just transferred to one of the most prestigious universities in the country. You remember all those all-nighters and cups of coffee on your old dorm desk. Now, you're finally here...
+# author: Fides Wong
+
+# theme: dark
+
+Big dreams and starry eyes, you've just transferred to one of the most prestigious universities in the country. You remember all those all-nighters and cups of coffee on your old dorm desk. Now, you're finally here... 
 
 I checked my schedule one last time, today must go perfect. "Ethics" at 9am and "Intro to Chemistry" at 12pm. I look at my watch: 8:30am. Looks like I still have some time to kill. 
 
 
- * [Let's get coffee] Can't start a day without a cup yummy coffee. There should be a coffee shop near campus. 
+ * [Let's get coffee] Can't start a day without a cup yummy coffee. There should be a coffee shop near campus. # CLASS: position
+    # IMAGE: images/angycat.png
 -> coffee
- * [Let's go to class early] It won't hurt to go to class a little early. I can play Solitaire on my laptop. 
+ * [Let's go to class early] It won't hurt to go to class a little early. I can play Solitaire on my laptop.
+
 ->classearly
+
 
 == coffee == 
 The Teeny Beany. Everyone at UColl says this is the spot to be. I join the long line of impatient college students waiting to order. 
-Finally, what seems like 10 years go by and it is finally my turn to order. I look up at the menu...
+Finally, what seems like 10 years go by and it is finally my turn to order. I look up at the menu...  # CLASS : innerThought
 
 ->menu
 
@@ -35,6 +42,7 @@ Finally, what seems like 10 years go by and it is finally my turn to order. I lo
 -> class_woJ
 
 == classearly == 
+# RESTART
 I strolled across the campus courtyard to the Humanities Building. Built in 1820, it still stands strong and full of curious students. Wide steps of stone stairs led to the grand entrance, so many famous scholars have walked through that door. Now, it is my turn. 
 I walked up the stairs and pressed against the massive wooden door. It wouldn't budge. A heavy door won't stop me. I took both hands and pushed with all my might. Not even a creak. Wow! A REALLY heavy door! 
 
@@ -74,7 +82,7 @@ I walked through the door and into the classroom. A huge lecture hall- something
 
 "Over here!" Jeremiah called out. I'm guessing he wants me to sit with him? 
 
-*"Coming!"
+*"Coming!" 
 
 - I sat down and began to ruffle through my bag. 
 
@@ -84,11 +92,11 @@ I walked through the door and into the classroom. A huge lecture hall- something
 
 <em> Okay, {myName}. You need to lock IN. </em> I took out my laptop, my notebooks, and my... Should I take out my cute pens or my serious pens? If I take out my cute stuff, he might judge me...
 
-*(cutepens) Definitely cute pens!
+*(cutepens) Definitely cute pens! # IMAGE: images/angycat2.jpg
 If he judges me, whatever. I'm not changing myself just for some guy.
 ~ attraction += 1
 
-*(seriouspens) Play it safe, serious pens.
+*(seriouspens) Play it safe, serious pens. # IMAGE: images/angycat3.jpeg
 He's probably going to see me as a total kid. I can't let him know I'm obsessed with Hello Kitty. 
 
 - I grabbed a couple of pens and placed them on my desk. He stares at them. {cutepens: His eyes widened and his lips curled into a sweet smile.} He put his head down and closed his eyes. {coffee: ->offercoffee}
@@ -116,6 +124,7 @@ He's probably going to see me as a total kid. I can't let him know I'm obsessed 
 
 
 == class_woJ == 
+# CLEAR
 I spedwalked to the Humanities Building and ran up the stone steps. I pushed the wooden door, but the door wouldn't budge. What's with this thing?! I'm going to be late! I turned my back onto the door and pushed with all my might. A small creak and then a thud. I marched my way down the corridor and into the classroom. 8:59, perfect. 
 
 I looked around to find a seat, but it was packed. There was only one seat open. I tip toed into the lecture hall and took my seat on the edge. I looked next to me and saw the most gorgeous man I've ever seen in my life. Seriously, he could be a model. 
