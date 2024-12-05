@@ -311,8 +311,10 @@ body.dark {
 
 .image1{
     position:fixed;
-  background-image: url("miku.jpeg");
-  bottom:250px;
-right:500px;
-  size: 100em;
+    background-image: url("miku.jpeg");
+    bottom:250px;
+    right:150px;
+    width: 600px;
+    height: 500px;
+  
 }
