@@ -104,6 +104,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
+    margin-left: 50px;
     background: white;
 }
 
@@ -185,10 +186,12 @@ img {
 .choice {
     text-align: center;
     line-height: 1.7em;
+    background-image: url("miku.jpeg");
 }
 
 /* 
   Class applied to first choice
+
 */
 :not(.choice)+.choice {
     padding-top: 1em;
@@ -306,9 +309,10 @@ body.dark {
     background: black;
 }
 
-.image{
+.image1{
+    position:fixed;
   background-image: url("miku.jpeg");
-  position: absolute;
-  top: 0 px;
-  
+  bottom:250px;
+right:500px;
+  size: 100em;
 }
