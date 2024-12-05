@@ -255,8 +255,8 @@ img {
 */
 
 body.dark {
-    background: black;
-    color: white;
+    background: #8492d3;
+    color: #8492d3;
 }
 
 .dark h2 {
@@ -264,7 +264,8 @@ body.dark {
 }
 
 .dark .container {
-    background: black;
+    background: #30297b;
+    padding-bottom: 50px;
 }
 
 .dark .written-in-ink {
@@ -303,4 +304,11 @@ body.dark {
 
 .dark #controls {
     background: black;
+}
+
+.image{
+  background-image: url("miku.jpeg");
+  position: absolute;
+  top: 0 px;
+  
 }
