@@ -318,3 +318,8 @@ body.dark {
     height: 500px;
   
 }
+
+.pizza {
+    background-image: url("miku.jpeg");
+    color:red;
+}
