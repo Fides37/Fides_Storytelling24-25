@@ -11,7 +11,7 @@ CONST myConstant = 6 //similar to global, but cannot change like global
 //string: text
 //+= sticky choice
 
-I want pizza. Which pizza? # IMAGE: images/miku.jpeg
+I want pizza. Which pizza? # CLASS: image1
 
 * Cheese
  * Pepperoni # CLASS: pizza
