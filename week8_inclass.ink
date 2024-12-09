@@ -15,7 +15,7 @@ CONST myConstant = 6 //similar to global, but cannot change like global
 I want pizza. Which pizza? # IMAGE: images/miku.jpeg
 
 * Cheese
- * Pepperoni
+ * Pepperoni # CLASS: pizza
  * Pineapple
  
 - Yummers, I ated it. 
